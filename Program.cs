@@ -72,4 +72,34 @@ namespace FootballSearchEngine
                         if (worldCups[i, 1] == country)
                         {
                             Console.WriteLine($"The {worldCups[i, 0]} World Cup was won by {country}.");
-                            foundWinner = true
+                            foundWinner = true;
+                        }
+                    }
+
+                    if (!foundWinner)
+                    {
+                        Console.WriteLine($"No World Cup was won by {country}.");
+                    }
+
+                    break;
+                case "according to the countries in which the matches were held":
+                    HashSet<string> countries = new HashSet<string>();
+
+                    for (int i = 0; i < worldCups.GetLength(0); i++)
+                    {
+                        countries.Add(worldCups[i, 1]);
+                    }
+
+                    Console.WriteLine("Countries where the matches were held:");
+                    foreach (string c in countries)
+                    {
+                        Console.WriteLine(c);
+                    }
+
+                    break;
+
+            }
+        }
+    }
+}
+
