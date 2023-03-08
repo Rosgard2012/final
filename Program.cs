@@ -11,9 +11,10 @@ namespace FootballSearchEngine
 
             Console.WriteLine($"{name}, this is a football world cup search engine.");
             Console.WriteLine("How do you want to search for information:");
-            Console.WriteLine("- by years");
-            Console.WriteLine("- by country to the winners");
-            Console.WriteLine("- according to the countries in which the matches were held");
+            Console.WriteLine("1 - Sort by years");
+            Console.WriteLine("2 - Sort by country of the winners");
+            Console.WriteLine("3 - Sort by countries in which the matches were held");
+
 
             string[,] worldCups = new string[,]
             {
@@ -41,10 +42,13 @@ namespace FootballSearchEngine
             };
 
             // Виконання операцій залежно від вибраної опції пошуку
-            string searchOption = Console.ReadLine();
+           
+            
+            
+            int searchOption = int.Parse(Console.ReadLine());
             switch (searchOption)
             {
-                case "by years":
+                case 1:
                     Console.WriteLine("Enter a year to search for:");
                     string year = Console.ReadLine();
 
@@ -62,7 +66,7 @@ namespace FootballSearchEngine
                     }
                     break;
 
-                case "by country to the winners":
+                case 2:
                     Console.WriteLine("Enter a country to search for:");
                     string country = Console.ReadLine();
                     bool foundWinner = false;
@@ -82,7 +86,7 @@ namespace FootballSearchEngine
                     }
 
                     break;
-                case "according to the countries in which the matches were held":
+                case 3:
                     HashSet<string> countries = new HashSet<string>();
 
                     for (int i = 0; i < worldCups.GetLength(0); i++)
@@ -97,6 +101,10 @@ namespace FootballSearchEngine
                     }
 
                     break;
+                
+
+                default:
+                    Console.WriteLine("Invalid option selected."); break;
 
             }
         }
