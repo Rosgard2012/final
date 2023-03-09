@@ -39,7 +39,9 @@ namespace FootballSearchEngine
                 { "2006", "Italy", "Berlin" },
                 { "2010", "Spain", "Johannesburg" },
                 { "2014", "Germany", "Rio de Janeiro" },
-                { "2018", "France", "Moscow" }
+                { "2018", "France", "Moscow" },
+                { "2022", "Argentina", "Katar" },
+
             };
 
             // Виконання операцій залежно від вибраної опції пошуку
