@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pvykhrov\\source\\repos\\final\\Final.csproj": {}
+    "/Users/pvykhrov/Documents/GitHub/final/Final.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pvykhrov\\source\\repos\\final\\Final.csproj": {
+    "/Users/pvykhrov/Documents/GitHub/final/Final.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pvykhrov\\source\\repos\\final\\Final.csproj",
+        "projectUniqueName": "/Users/pvykhrov/Documents/GitHub/final/Final.csproj",
         "projectName": "Final",
-        "projectPath": "C:\\Users\\pvykhrov\\source\\repos\\final\\Final.csproj",
-        "packagesPath": "C:\\Users\\pvykhrov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pvykhrov\\source\\repos\\final\\obj\\",
+        "projectPath": "/Users/pvykhrov/Documents/GitHub/final/Final.csproj",
+        "packagesPath": "/Users/pvykhrov/.nuget/packages/",
+        "outputPath": "/Users/pvykhrov/Documents/GitHub/final/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\pvykhrov\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/pvykhrov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }
