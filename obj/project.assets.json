@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pvykhrov/Documents/GitHub/final/Final.csproj",
+      "projectUniqueName": "/Users/pvykhrov/Git/final/Final.csproj",
       "projectName": "Final",
-      "projectPath": "/Users/pvykhrov/Documents/GitHub/final/Final.csproj",
+      "projectPath": "/Users/pvykhrov/Git/final/Final.csproj",
       "packagesPath": "/Users/pvykhrov/.nuget/packages/",
-      "outputPath": "/Users/pvykhrov/Documents/GitHub/final/obj/",
+      "outputPath": "/Users/pvykhrov/Git/final/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/pvykhrov/.nuget/NuGet/NuGet.Config"

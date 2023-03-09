@@ -16,6 +16,7 @@ namespace FootballSearchEngine
             Console.WriteLine("3 - Sort by countries in which the matches were held");
 
             //Заносимо данні в масив: рік, переможець, місто
+            //test commit MacOS
             string[,] worldCups = new string[,]
             {
                 { "1930", "Uruguay", "Montevideo" },
