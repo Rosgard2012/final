@@ -6,17 +6,8 @@ namespace FootballSearchEngine
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello! What is your name?");
-            string name = Console.ReadLine();
-
-            Console.WriteLine($"{name}, this is a football world cup search engine.");
-            Console.WriteLine("How do you want to search for information:");
-            Console.WriteLine("1 - Sort by years");
-            Console.WriteLine("2 - Sort by country of the winners");
-            Console.WriteLine("3 - Take all of FIFA World Cup ");
-
-            //Заносимо данні в масив: рік, переможець, місто
-            string[,] worldCups = new string[,]
+            //Заносимо данні в масив: рік, переможець, місто, рахунок
+            string[,] worldCups = 
             {
                 { "1930", "Uruguay", "Montevideo", "4-2" },
                 { "1934", "Italy", "Rome", "2-1 (a.e.t.)" },
@@ -41,70 +32,96 @@ namespace FootballSearchEngine
                 { "2018", "France", "Moscow", "4-2" },
                 { "2022", "Argentina", "Lusail", "3-3" },
             };
+            Console.WriteLine(worldCups.GetLength(0));
 
-            // Виконання операцій залежно від вибраної опції пошуку
-            int searchOption = int.Parse(Console.ReadLine());
-            switch (searchOption)
+            Console.WriteLine("Hello! What is your name?");
+            string name = Console.ReadLine();
+            Console.WriteLine($"{name}, this is a football world cup search engine.");
+            while (true)
             {
-                case 1:
-                    Console.WriteLine("Enter a year to search for:");
-                    string year = Console.ReadLine();
 
-                    for (int i = 0; i < worldCups.GetLength(0); i++)
-                    {
-                        if (worldCups[i, 0] == year)
+                Console.WriteLine("How do you want to search for information:");
+                Console.WriteLine("1 - Sort by years");
+                Console.WriteLine("2 - Sort by country of the winners");
+                Console.WriteLine("3 - Take all of FIFA World Cup ");
+          
+
+            
+
+                // Виконання операцій залежно від вибраної опції пошуку
+                string searchOption = Console.ReadLine();
+            
+                switch (searchOption)
+                {
+                    case "1":
+                        Console.WriteLine("Enter a year to search for:");
+                        string year = Console.ReadLine();
+
+                        for (int i = 0; i < worldCups.GetLength(0); i++)
                         {
-                            Console.WriteLine($"The {year} World Cup was held in {worldCups[i, 2]}, and was won by {worldCups[i, 3]}.");
-                            break;
+                            if (worldCups[i, 0] == year)
+                            {
+                                Console.WriteLine($"The {year} World Cup was held in {worldCups[i, 2]}, and was won by {worldCups[i, 1]}.");
+                                break;
+                            }
+                            else if (i == worldCups.GetLength(0) - 1)
+                            {
+                                Console.WriteLine($"No World Cup was held in {year}.");
+                            }
                         }
-                        else if (i == worldCups.GetLength(0) - 1)
+                        
+                        break;
+                    case "2":
+                        Console.WriteLine("Enter a country to search for:");
+                        string country = Console.ReadLine();
+                        bool foundWinner = false;
+
+                        for (int i = 0; i < worldCups.GetLength(0); i++)
                         {
-                            Console.WriteLine($"No World Cup was held in {year}.");
+                            if (worldCups[i, 1] == country)
+                            {
+                                Console.WriteLine($"The {worldCups[i, 0]} World Cup was won by {country}.");
+                                foundWinner = true;
+                            }
                         }
-                    }
-                    break;
 
-                case 2:
-                    Console.WriteLine("Enter a country to search for:");
-                    string country = Console.ReadLine();
-                    bool foundWinner = false;
-
-                    for (int i = 0; i < worldCups.GetLength(0); i++)
-                    {
-                        if (worldCups[i, 1] == country)
+                        if (!foundWinner)
                         {
-                            Console.WriteLine($"The {worldCups[i, 0]} World Cup was won by {country}.");
-                            foundWinner = true;
+                            Console.WriteLine($"No World Cup was won by {country}.");
                         }
-                    }
 
-                    if (!foundWinner)
-                    {
-                        Console.WriteLine($"No World Cup was won by {country}.");
-                    }
+                        break;
+                    case "3":
+                        Console.WriteLine("--------------------------------");
+                        Console.WriteLine("City where the matches were held:");
+                        Console.WriteLine("--------------------------------");
+                        for (int i = 0; i < worldCups.GetLength(0); i++)
+                        {
+                            Console.WriteLine($"in {worldCups[i, 0]}, the {worldCups[i, 1]} team won with a score of {worldCups[i, 3]} in the city {worldCups[i, 2]}");
+                        }
+                        Console.WriteLine("--------------------------------");
+                        break;
+                    default:
+                        Console.WriteLine("Invalid option selected."); break;
 
-                    break;
-                case 3:
-                    HashSet<string> countries = new HashSet<string>();
+                }
 
-                    for (int i = 0; i < worldCups.GetLength(0); i++)
-                    {
-                        countries.Add($"in {worldCups[i, 0]}, the {worldCups[i, 1]} team won with a score of {worldCups[i, 3]} in the city {worldCups[i, 2]}");
-                    }
-
-                    Console.WriteLine("City where the matches were held:");
-                    foreach (string c in countries)
-                    {
-                        Console.WriteLine(c);
-                    }
-
-                    break;
+                Console.WriteLine("Шо тобі ще?");
+                Console.WriteLine("Натисни 1 щоб вийти");
+                Console.WriteLine("натисни що завгодно щоб продовжити пошук матчів");
                 
+                string exit = Console.ReadLine();
+                if (exit == "1")
+                {
+                    Console.WriteLine("Exit");
+                    
+                    break;
 
-                default:
-                    Console.WriteLine("Invalid option selected."); break;
+                } 
 
+                
             }
+            
         }
     }
 }
