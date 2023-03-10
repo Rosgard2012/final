@@ -1,0 +1,15 @@
+/Users/pvykhrov/Git/final/bin/Release/net7.0/Final
+/Users/pvykhrov/Git/final/bin/Release/net7.0/Final.deps.json
+/Users/pvykhrov/Git/final/bin/Release/net7.0/Final.runtimeconfig.json
+/Users/pvykhrov/Git/final/bin/Release/net7.0/Final.dll
+/Users/pvykhrov/Git/final/bin/Release/net7.0/Final.pdb
+/Users/pvykhrov/Git/final/obj/Release/net7.0/Final.csproj.AssemblyReference.cache
+/Users/pvykhrov/Git/final/obj/Release/net7.0/Final.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pvykhrov/Git/final/obj/Release/net7.0/Final.AssemblyInfoInputs.cache
+/Users/pvykhrov/Git/final/obj/Release/net7.0/Final.AssemblyInfo.cs
+/Users/pvykhrov/Git/final/obj/Release/net7.0/Final.csproj.CoreCompileInputs.cache
+/Users/pvykhrov/Git/final/obj/Release/net7.0/Final.dll
+/Users/pvykhrov/Git/final/obj/Release/net7.0/refint/Final.dll
+/Users/pvykhrov/Git/final/obj/Release/net7.0/Final.pdb
+/Users/pvykhrov/Git/final/obj/Release/net7.0/Final.genruntimeconfig.cache
+/Users/pvykhrov/Git/final/obj/Release/net7.0/ref/Final.dll
