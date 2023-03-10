@@ -54,7 +54,7 @@ namespace FootballSearchEngine
                     {
                         if (worldCups[i, 0] == year)
                         {
-                            Console.WriteLine($"The {year} World Cup was held in {worldCups[i, 2]}, and was won by {worldCups[i, 1]}.");
+                            Console.WriteLine($"The {year} World Cup was held in {worldCups[i, 2]}, and was won by {worldCups[i, 3]}.");
                             break;
                         }
                         else if (i == worldCups.GetLength(0) - 1)
@@ -89,7 +89,7 @@ namespace FootballSearchEngine
 
                     for (int i = 0; i < worldCups.GetLength(0); i++)
                     {
-                        countries.Add($"{worldCups[i, 0]}\tin\t{worldCups[i, 2]}\t \t winner\t{worldCups[i, 1]}\t\t{worldCups[i, 3]}");
+                        countries.Add($"in {worldCups[i, 0]}, the {worldCups[i, 1]} team won with a score of {worldCups[i, 3]} in the city {worldCups[i, 2]}");
                     }
 
                     Console.WriteLine("City where the matches were held:");
@@ -109,3 +109,4 @@ namespace FootballSearchEngine
     }
 }
 
+            
