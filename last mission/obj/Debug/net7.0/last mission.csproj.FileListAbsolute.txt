@@ -1,0 +1,15 @@
+/Users/pvykhrov/Git/last mission/bin/Debug/net7.0/last mission
+/Users/pvykhrov/Git/last mission/bin/Debug/net7.0/last mission.deps.json
+/Users/pvykhrov/Git/last mission/bin/Debug/net7.0/last mission.runtimeconfig.json
+/Users/pvykhrov/Git/last mission/bin/Debug/net7.0/last mission.dll
+/Users/pvykhrov/Git/last mission/bin/Debug/net7.0/last mission.pdb
+/Users/pvykhrov/Git/last mission/obj/Debug/net7.0/last mission.csproj.AssemblyReference.cache
+/Users/pvykhrov/Git/last mission/obj/Debug/net7.0/last mission.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pvykhrov/Git/last mission/obj/Debug/net7.0/last mission.AssemblyInfoInputs.cache
+/Users/pvykhrov/Git/last mission/obj/Debug/net7.0/last mission.AssemblyInfo.cs
+/Users/pvykhrov/Git/last mission/obj/Debug/net7.0/last mission.csproj.CoreCompileInputs.cache
+/Users/pvykhrov/Git/last mission/obj/Debug/net7.0/last mission.dll
+/Users/pvykhrov/Git/last mission/obj/Debug/net7.0/refint/last mission.dll
+/Users/pvykhrov/Git/last mission/obj/Debug/net7.0/last mission.pdb
+/Users/pvykhrov/Git/last mission/obj/Debug/net7.0/last mission.genruntimeconfig.cache
+/Users/pvykhrov/Git/last mission/obj/Debug/net7.0/ref/last mission.dll
