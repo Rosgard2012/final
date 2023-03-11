@@ -1,14 +1,14 @@
 ﻿using System;
 
-namespace FootballSearchEngine
+namespace FootballSearch
 {
     class Program
     {
-        static void Main(string[] args)
+        //Заносимо дані в масив: рік, переможець, місто, рахунок
+        static string[,] metodWorldCups()
         {
-            //Заносимо данні в масив: рік, переможець, місто, рахунок
             string[,] worldCups = 
-            {
+                    {
                 { "1930", "Uruguay", "Montevideo", "4-2" },
                 { "1934", "Italy", "Rome", "2-1 (a.e.t.)" },
                 { "1938", "Italy", "Paris", "4-2" },
@@ -31,23 +31,24 @@ namespace FootballSearchEngine
                 { "2014", "Germany", "Rio de Janeiro", "1-0 (a.e.t.)" },
                 { "2018", "France", "Moscow", "4-2" },
                 { "2022", "Argentina", "Lusail", "3-3" },
-            };
-            Console.WriteLine(worldCups.GetLength(0));
+                    };
+                return worldCups;
+             }
 
+
+        static void Main(string[] args)
+        {
+
+            string[,] worldCups = metodWorldCups(); // виклик методу
             Console.WriteLine("Hello! What is your name?");
             string name = Console.ReadLine();
             Console.WriteLine($"{name}, this is a football world cup search engine.");
             while (true)
             {
-
-                Console.WriteLine("How do you want to search for information:");
+                Console.WriteLine($"Hey {name}, how do you want to search for information:");
                 Console.WriteLine("1 - Sort by years");
                 Console.WriteLine("2 - Sort by country of the winners");
                 Console.WriteLine("3 - Take all of FIFA World Cup ");
-          
-
-            
-
                 // Виконання операцій залежно від вибраної опції пошуку
                 string searchOption = Console.ReadLine();
             
@@ -61,12 +62,16 @@ namespace FootballSearchEngine
                         {
                             if (worldCups[i, 0] == year)
                             {
-                                Console.WriteLine($"The {year} World Cup was held in {worldCups[i, 2]}, and was won by {worldCups[i, 1]}.");
+                                Console.WriteLine("--------------------------------");
+                                Console.WriteLine($"The {year} World Cup was held in {worldCups[i, 2]}, and was won by {worldCups[i, 1]}");
+                                Console.WriteLine("--------------------------------");
                                 break;
                             }
                             else if (i == worldCups.GetLength(0) - 1)
                             {
+                                Console.WriteLine("--------------------------------");
                                 Console.WriteLine($"No World Cup was held in {year}.");
+                                Console.WriteLine("--------------------------------");
                             }
                         }
                         
@@ -75,21 +80,27 @@ namespace FootballSearchEngine
                         Console.WriteLine("Enter a country to search for:");
                         string country = Console.ReadLine();
                         bool foundWinner = false;
-
                         for (int i = 0; i < worldCups.GetLength(0); i++)
                         {
                             if (worldCups[i, 1] == country)
                             {
-                                Console.WriteLine($"The {worldCups[i, 0]} World Cup was won by {country}.");
+                                Console.WriteLine("--------------------------------");
+                                Console.WriteLine($"The {worldCups[i, 0]} World Cup was won by {country}, in the {worldCups[i, 2]}");
+                                Console.WriteLine("--------------------------------");
                                 foundWinner = true;
                             }
                         }
 
                         if (!foundWinner)
                         {
+                            Console.WriteLine("--------------------------------");
                             Console.WriteLine($"No World Cup was won by {country}.");
+                            Console.WriteLine("--------------------------------");
                         }
-
+                        else
+                        {
+                            Console.WriteLine($"Search completed. See above for results.");
+                        }
                         break;
                     case "3":
                         Console.WriteLine("--------------------------------");
@@ -101,28 +112,28 @@ namespace FootballSearchEngine
                         }
                         Console.WriteLine("--------------------------------");
                         break;
+                    
                     default:
                         Console.WriteLine("Invalid option selected."); break;
-
                 }
-
-                Console.WriteLine("Шо тобі ще?");
-                Console.WriteLine("Натисни 1 щоб вийти");
-                Console.WriteLine("натисни що завгодно щоб продовжити пошук матчів");
-                
-                string exit = Console.ReadLine();
-                if (exit == "1")
+                Console.WriteLine("What else would you like to do?");
+                Console.WriteLine("Press 1 to exit");
+                Console.WriteLine("Press any other key to continue searching for matches");
+                string usInput = Console.ReadLine();
+                //вводемо спосіб виходу з while
+                if (usInput == "1")
                 {
-                    Console.WriteLine("Exit");
-                    
+                    Console.WriteLine("Exiting the program. Goodbye!");
                     break;
 
-                } 
-
+                }
                 
             }
             
         }
+
+        
+
     }
 }
 
