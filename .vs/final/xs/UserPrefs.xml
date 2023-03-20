@@ -1,38 +1,31 @@
 ﻿<Properties StartupConfiguration="{598E1865-A2F6-4345-A525-820C07FA80C7}|Default" GitUserInfo="UsingGIT">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="last mission/obj/project.assets.json">
+  <MonoDevelop.Ide.ItemProperties.Final PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.last_220mission PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../FIFO/FIFO/Program.cs">
     <Files>
       <File FileName="../last mission/Program.cs" Line="121" Column="18" />
-      <File FileName="README.md" Line="1" Column="1" />
-      <File FileName="last mission/obj/project.nuget.cache" Line="1" Column="1" />
-      <File FileName="last mission/obj/project.assets.json" Line="26" Column="17" />
+      <File FileName="README.md" />
+      <File FileName="last mission/obj/project.nuget.cache" />
+      <File FileName="last mission/obj/project.assets.json" />
+      <File FileName="../FIFO/FIFO/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Final" expanded="True">
-            <Node name="Final" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True">
-                  <Node name="Microsoft.NETCore.App" selected="True" />
-                </Node>
-              </Node>
-              <Node name="last mission" expanded="True">
-                <Node name="bin" expanded="True" />
-                <Node name="obj" expanded="True" />
-              </Node>
+            <Node name="FIFO" expanded="True">
+              <Node name="Program.cs" selected="True" />
             </Node>
-            <Node name="last mission" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Final PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.last_220mission PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FIFO FirstBuild="True" />
+  <MultiItemStartupConfigurations />
 </Properties>
